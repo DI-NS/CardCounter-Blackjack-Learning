@@ -173,7 +173,7 @@ CardCounter/
 ### 1️⃣ Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/cardcounter.git
+git clone https://github.com/DI-NS/CardCounter-Blackjack-Learning.git
 cd cardcounter
 ```
 
@@ -345,6 +345,6 @@ Projeto desenvolvido para aprendizado de C#, ASP.NET Core, PostgreSQL e desenvol
 
 **🃏 Bons estudos e boa contagem! 🎲**
 
-⭐ Se este projeto  teajudou, considere dar uma estrela!
+⭐ Se este projeto  te ajudou, considere dar uma estrela!
 
 </div>
