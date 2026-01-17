@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Counter - Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Card Counter</h1>
+            <p>Pratique contagem de cartas no Blackjack!</p>
+        </header>
+
+        <!-- Área do Jogo -->
+        <main>
+            <!-- Informações do Jogo -->
+            <div class="game-info">
+                <div class="info-box">
+                    <span class="label">Cartas Vistas</span>
+                    <span id="cards-shown">0</span>
+                </div>
+                <div class="info-box">
+                    <span class="label">Restantes</span>
+                    <span id="cards-remaining">52</span>
+                </div>
+                <div class="info-box">
+                    <span class="label">Pontuação</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+
+            <!-- Área da Carta -->
+            <div class="card-area">
+                <div id="card-display" class="card">
+                    <span class="card-placeholder">?</span>
+                </div>
+            </div>
+
+            <!-- Área de Resposta -->
+            <div class="answer-area">
+                <p>Qual é a contagem atual?</p>
+                <input
+                    type="number"
+                    id="guess-input"
+                    placeholder="Digite sua resposta"
+                >
+                <div class="buttons">
+                    <button id="btn-guess" onclick="submitGuess()">
+                        Verificar
+                    </button>
+                    <button id="btn-next" onclick="getNextCard()">
+                        Próxima Carta
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feedback -->
+            <div id="feedback" class="feedback"></div>
+
+            <!-- Botão Iniciar -->
+            <button id="btn-start" class="btn-start" onclick="startGame()">
+                Iniciar Novo Jogo
+            </button>
+        </main>
+
+        <!-- Tabela de Referência -->
+        <aside class="reference">
+            <h3>Tabela Hi-Lo</h3>
+            <table>
+                <tr>
+                    <td>2, 3, 4, 5, 6</td>
+                    <td class="positive">+1</td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td class="neutral">0</td>
+                </tr>
+                <tr>
+                    <td>10, J, Q, K, A</td>
+                    <td class="negative">-1</td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

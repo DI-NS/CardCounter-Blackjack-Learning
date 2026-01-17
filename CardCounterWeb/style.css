@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #888;
+}
+
+/* Informações do Jogo */
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-box .label {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.info-box span:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4ade80;
+}
+
+/* Área da Carta */
+.card-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 150px;
+    height: 210px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-placeholder {
+    color: #ccc;
+}
+
+/* Carta Vermelha */
+.card.red {
+    color: #ef4444;
+}
+
+/* Carta Preta */
+.card.black {
+    color: #1a1a2e;
+}
+
+/* Área de Resposta */
+.answer-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.answer-area p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.answer-area input {
+    width: 200px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+#btn-guess {
+    background: #4ade80;
+    color: #1a1a2e;
+}
+
+#btn-next {
+    background: #3b82f6;
+    color: white;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+}
+
+/* Feedback */
+.feedback {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    min-height: 50px;
+}
+
+.feedback.correct {
+    background: rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+}
+
+.feedback.wrong {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+/* Botão Iniciar */
+.btn-start {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-start:hover {
+    background: #7c3aed;
+}
+
+/* Tabela de Referência */
+.reference {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reference h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reference table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reference td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.positive { color: #4ade80; font-weight: bold; }
+.neutral { color: #fbbf24; font-weight: bold; }
+.negative { color: #ef4444; font-weight: bold; }
